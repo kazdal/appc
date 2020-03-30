@@ -1,0 +1,55 @@
+section {
+  &.brands {
+    width:100%;
+    background-color:#f7faff;
+    div {
+      &.brands-holder {
+        width:100%;
+        position:relative;
+        div {
+          &.tns-controls {
+            width:100%;
+            height:100%;
+            position:absolute;
+            left:0px;
+            top:0px;
+            z-index:9;
+            button {
+              position:absolute;
+              border:0px;
+              width:14px;
+              height:27px;
+              background-color:transparent;
+              top:50%;
+              transform:translateY(-50%);
+              &:first-child {
+
+              }
+              &:last-child {
+                right:10px;
+              }
+            }
+          }
+        }
+        div {
+          &.brands-slider {
+            div {
+              &.tns-item {
+                height:120px;
+                display:inline-flex;
+                @include align-items(center);
+                @include justify-content(center);
+                img {
+
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @include respond-to('small') {
+
+    }
+  }
+}

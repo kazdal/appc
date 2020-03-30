@@ -1,0 +1,69 @@
+section {
+  &.enterprise {
+    width:100%;
+    padding:90px 0px 90px;
+    h3 {
+      text-align: center;
+      @include font-montserrat(
+        $color:#1a3352,
+        $size: rem-calc(34),
+        $family: 'Montserrat-Bold',
+        $lh:normal
+      );
+    }
+    div {
+      &.enterprise-features {
+        margin-top:60px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 1rem;
+        a {
+          height:120px;
+          padding:20px;
+          border-radius: 5px;
+          border: solid 1px #e8eef7;
+          @include flexbox();
+          @include align-items(center);
+          @include justify-content(flex-start);
+          text-align: left;
+          text-decoration: none;
+          &:hover {
+            border-color:#1A3352;
+          }
+          p {
+            @include font-montserrat(
+              $color:#1a3352,
+              $size: rem-calc(17),
+              $family: 'Montserrat',
+              $lh:normal
+            );
+            strong {
+              @include font-montserrat(
+                $family: 'Montserrat-Bold'
+              );
+            }
+          }
+          svg {
+            min-width:60px;
+            margin-right:20px;
+          }
+        }
+      }
+    }
+
+    a {
+      margin:50px auto 0;
+      display:table;
+      text-align: center;
+      text-decoration: underline;
+      @include font-montserrat(
+        $color:#193251,
+        $size: rem-calc(17),
+        $family: 'Montserrat',
+        $lh:normal,
+        $ls:0.24px
+      );
+    }
+
+  }
+}

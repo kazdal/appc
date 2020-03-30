@@ -1,0 +1,91 @@
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+  @else {
+    @warn " `#{$breakpoint}`"
+        + "#{map-keys($breakpoints)}";
+  }
+}
+@mixin font-montserrat($size: false, $color: false, $family: false,  $lh: false, $ls: false) {
+    @if $size {
+      font-size: $size;
+    }
+    @if $color {
+      color: $color;
+    }
+    @if $family {
+      font-family: $family;
+    }
+    @if $lh {
+      line-height: $lh;
+    }
+    @if $ls {
+      letter-spacing: $lh;
+    }
+}
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+@function rem-calc($values, $base: $rem-base) {
+  $rem-values: ();
+  $count: length($values);
+  @if $base == null {
+    $base: $rem-base;
+  }
+  @if $count == 1 {
+    @return -zf-to-rem($values, $base);
+  }
+  @for $i from 1 through $count {
+    $rem-values: append($rem-values, -zf-to-rem(nth($values, $i), $base));
+  }
+  @return $rem-values;
+}
+@function -zf-to-rem($value, $base: $rem-base) {
+  @if (unit($value) != 'rem') {
+    $value: strip-unit($value) / strip-unit($base) * 1rem;
+  }
+  @if ($value == 0rem) { $value: 0; }
+  @return $value;
+}
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+@mixin flex-direction($direction) {
+  -webkit-flex-direction: $direction;
+     -moz-flex-direction: $direction;
+      -ms-flex-direction: $direction;
+          flex-direction: $direction;
+}
+@mixin justify-content($justify) {
+  -webkit-justify-content: $justify;
+     -moz-justify-content: $justify;
+      -ms-justify-content: $justify;
+          justify-content: $justify;
+            -ms-flex-pack: $justify;
+}
+@mixin align-items($align) {
+  -webkit-align-items: $align;
+     -moz-align-items: $align;
+      -ms-align-items: $align;
+       -ms-flex-align: $align;
+          align-items: $align;
+}
+@mixin flex-wrap($wrap) {
+  -webkit-flex-wrap: $wrap;
+     -moz-flex-wrap: $wrap;
+      -ms-flex-wrap: $wrap;
+          flex-wrap: $wrap;
+}

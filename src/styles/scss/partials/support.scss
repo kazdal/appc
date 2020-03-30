@@ -1,0 +1,127 @@
+section {
+  &.support {
+    width:100%;
+    padding:90px 0px;
+    div {
+      &.support-form {
+        max-width:70%;
+        margin:0px auto;
+        h2 {
+          text-align: center;
+          @include font-montserrat(
+            $color: #1a3352,
+            $size: rem-calc(38),
+            $family: 'Montserrat-Bold',
+            $lh:normal
+          );
+        }
+        p {
+          text-align: center;
+          margin:20px 0px 40px;
+          @include font-montserrat(
+            $color: #727d8a,
+            $size: rem-calc(18),
+            $family: 'Montserrat',
+            $lh:1.67
+          );
+        }
+        div {
+          &.form {
+            width:100%;
+            @include flexbox();
+            @include justify-content(center);
+            @include flex-direction(column);
+            input {
+              width:100%;
+              height:60px;
+              border: solid 1px #727d8a;
+              padding:0px 45px;
+              @include border-radius(10px);
+            }
+            textarea {
+              width:100%;
+              height:130px;
+              border: solid 1px #727d8a;
+              @include border-radius(10px);
+              padding:20px 45px;
+            }
+            input, textarea {
+              @include font-montserrat(
+                $color: #727d8a,
+                $size: rem-calc(18),
+                $family: 'Montserrat-Medium',
+                $lh:normal,
+                $ls:-0.17px
+              );
+            }
+            div {
+              &.form-line {
+                width:100%;
+                margin-bottom:30px;
+                &.split {
+                  @include flexbox();
+                  @include align-items(center);
+                  @include justify-content(space-between);
+                  input {
+                    width:48%;
+                  }
+                }
+              }
+            }
+            button {
+              padding:20px 90px;
+              border:0px;
+              background-color: #ff8f34;
+              margin:0px auto;
+              cursor:pointer;
+              @include border-radius(30px);
+              @include font-montserrat(
+                $color: white,
+                $size: rem-calc(18),
+                $family: 'Montserrat-Medium',
+                $lh:normal,
+                $ls:-0.17px
+              );
+            }
+          }
+        }
+      }
+    }
+    @include respond-to('small') {
+      div {
+        &.support-form {
+          max-width:95%;
+          h2 {
+            @include font-montserrat(
+              $size: rem-calc(24)
+            );
+          }
+          div {
+            &.form {
+              width:100%;
+              @include flexbox();
+              @include justify-content(center);
+              @include flex-direction(column);
+              div {
+                &.form-line {
+                  width:100%;
+                  margin-bottom:30px;
+                  &.split {
+                    @include flexbox();
+                    @include align-items(center);
+                    @include flex-direction(column);
+                    @include justify-content(space-between);
+                    input {
+                      width:100%;
+                      margin-bottom:25px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

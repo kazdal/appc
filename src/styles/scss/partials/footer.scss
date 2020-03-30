@@ -1,0 +1,201 @@
+footer {
+  width:100%;
+  background-color:#112238;
+  background-image:url('/assets/images/footerbg.svg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  div {
+    &.footer-content {
+      width:100%;
+      padding:90px 0px;
+      @include flexbox();
+      @include align-items(stretch);
+      @include justify-content(space-between);
+
+      div {
+        &.footer-logo {
+          @include flexbox();
+          @include align-items(center);
+        }
+        span {
+          @include font-montserrat(
+            $color:white,
+            $size: rem-calc(16),
+            $family: 'Montserrat-Medium',
+            $lh:normal
+          );
+        }
+        ul {
+          margin-top:10px;
+          li {
+            a {
+              display:block;
+              padding:10px 0px;
+              @include font-montserrat(
+                $color:#5b799f,
+                $size: rem-calc(14),
+                $family: 'Montserrat',
+                $lh:normal
+              );
+              &:hover {
+                color:white;
+              }
+            }
+          }
+        }
+        &.social {
+          @include flexbox();
+          @include align-items(flex-start);
+          @include flex-direction(column);
+          ul {
+            margin-top:2
+            0px;
+            @include flexbox();
+            @include align-items(center);
+            @include justify-content(flex-start);
+            li {
+              &:not(:last-child) {
+                margin-right:15px;
+              }
+              a {
+                width:35px;
+                height:35px;
+                border:1px solid #4F6B8E;
+                @include border-radius(50%);
+                @include flexbox();
+                @include align-items(center);
+                @include justify-content(center);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  div {
+    &.copyright {
+      width:100%;
+      height:50px;
+      background-color: #0d1d31;
+      @include flexbox();
+      @include align-items(center);
+      @include justify-content(center);
+      @include font-montserrat(
+        $color:#5b799f,
+        $size: rem-calc(14),
+        $family: 'Montserrat-Medium'
+      );
+    }
+  }
+  @include respond-to('medium') {
+    div {
+      &.footer-content {
+        width:100%;
+        padding:90px 40px;
+        @include flexbox();
+        @include align-items(center);
+        @include justify-content(space-between);
+        @include flex-direction(row);
+        @include flex-wrap(wrap);
+        div {
+          width:25%;
+          height:220px;
+          @include flexbox();
+          @include flex-direction(column);
+
+          &:nth-child(odd) {
+            padding-left: 30px;
+          }
+
+          &.footer-logo {
+            order:5;
+            height:auto;
+            width:100%;
+            padding-left:0px;
+          }
+          &.social {
+            ul {
+              margin-top:20px;
+              @include flexbox();
+              @include align-items(center);
+              @include justify-content(flex-start);
+              @include flex-direction(row);
+              @include flex-wrap(wrap);
+              li {
+                margin-bottom:15px;
+                &:not(:last-child) {
+                  margin-right:10px;
+                }
+                a {
+                  width:35px;
+                  height:35px;
+                  border:1px solid #4F6B8E;
+                  @include border-radius(50%);
+                  @include flexbox();
+                  @include align-items(center);
+                  @include justify-content(center);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @include respond-to('small') {
+    div {
+      &.footer-content {
+        width:100%;
+        padding:90px 40px;
+        @include flexbox();
+        @include align-items(center);
+        @include justify-content(space-between);
+        @include flex-direction(row);
+        @include flex-wrap(wrap);
+        div {
+          width:50%;
+          height:220px;
+          @include flexbox();
+          @include flex-direction(column);
+
+          &:nth-child(odd) {
+            padding-left: 30px;
+          }
+
+          &.footer-logo {
+            order:5;
+            height:auto;
+            width:100%;
+            padding-left:0px;
+          }
+          &.social {
+            ul {
+              margin-top:20px;
+              @include flexbox();
+              @include align-items(center);
+              @include justify-content(flex-start);
+              @include flex-direction(row);
+              @include flex-wrap(wrap);
+              li {
+                margin-bottom:15px;
+                &:not(:last-child) {
+                  margin-right:10px;
+                }
+                a {
+                  width:35px;
+                  height:35px;
+                  border:1px solid #4F6B8E;
+                  @include border-radius(50%);
+                  @include flexbox();
+                  @include align-items(center);
+                  @include justify-content(center);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

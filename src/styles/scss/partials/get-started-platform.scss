@@ -1,0 +1,242 @@
+section {
+  &.get-started {
+    width:100%;
+    background-color:#FF8F34;
+    background-image:url('/assets/images/startbg.svg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    div {
+      width:100%;
+      height:170px;
+      @include flexbox();
+      @include align-items(center);
+      @include justify-content(space-between);
+      p {
+        @include font-montserrat(
+          $color:white,
+          $size: rem-calc(32),
+          $family: 'Montserrat-Bold',
+          $lh:normal
+        );
+      }
+      a {
+        background-color:white;
+        padding:20px 60px;
+        @include border-radius(30px);
+        @include font-montserrat(
+          $color:#FF8F34,
+          $size: rem-calc(18),
+          $family: 'Montserrat-Bold',
+          $lh:normal,
+          $ls:-0.17px
+        );
+        &:hover {
+          text-decoration:underline;
+        }
+      }
+    }
+    @include respond-to('medium') {
+      background-size:cover;
+      div {
+        height:auto;
+        padding:40px 0px;
+        @include justify-content(center);
+        @include flex-direction(column);
+        p {
+          max-width:90%;
+          text-align: center;
+          @include font-montserrat(
+            $size: rem-calc(22)
+          );
+        }
+        a {
+          padding:16px 20px;
+          margin-top:20px;
+          @include font-montserrat(
+            $size: rem-calc(16),
+            $ls:-0.16px
+          );
+        }
+      }
+    }
+    @include respond-to('small') {
+      background-size:cover;
+      div {
+        height:auto;
+        padding:40px 0px;
+        @include justify-content(center);
+        @include flex-direction(column);
+        p {
+          max-width:90%;
+          text-align: center;
+          @include font-montserrat(
+            $size: rem-calc(22)
+          );
+        }
+        a {
+          padding:16px 20px;
+          margin-top:20px;
+          @include font-montserrat(
+            $size: rem-calc(16),
+            $ls:-0.16px
+          );
+        }
+      }
+    }
+  }
+}
+section {
+  &.advantages {
+    width:100%;
+    height:500px;
+    background-color:#1a3352;
+    background-image:url('/assets/images/advantagesbg.svg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+
+    div {
+      &.advantages-content {
+        width:100%;
+        @include flexbox();
+        @include align-items(center);
+        @include justify-content(space-between);
+        @include flex-direction(row);
+        div{
+          &.content {
+            width:60%;
+            height:500px;
+            @include flexbox();
+            @include align-items(flex-start);
+            @include justify-content(center);
+            @include flex-direction(column);
+            h3 {
+              @include font-montserrat(
+                $color:white,
+                $size: rem-calc(32),
+                $family: 'Montserrat-Bold',
+                $lh:normal
+              );
+              margin-bottom:21px;
+            }
+            p {
+              @include font-montserrat(
+                $color:white,
+                $size: rem-calc(21),
+                $family: 'Montserrat',
+                $lh:1.25
+              );
+            }
+          }
+          &.image {
+            width:40%;
+            height:500px;
+            @include flexbox();
+            @include align-items(flex-end);
+            @include justify-content(flex-end);
+            @include flex-direction(column);
+          }
+        }
+      }
+    }
+    @include respond-to('medium') {
+      width:100%;
+      height:auto;
+      text-align: center;
+      div {
+        &.advantages-content {
+          @include flexbox();
+          @include align-items(center);
+          @include justify-content(center);
+          @include flex-direction(column);
+          width:100%;
+          padding-top:50px;
+          div{
+            &.content {
+              width:100%;
+              height:auto;
+              text-align: center;
+              h3 {
+                width:100%;
+                text-align: center;
+                @include font-montserrat(
+                  $size: rem-calc(24)
+                );
+              }
+              p {
+                width:100%;
+                text-align: center;
+                @include font-montserrat(
+                  $color:white,
+                  $size: rem-calc(15),
+                  $family: 'Montserrat',
+                  $lh:normal
+                );
+              }
+            }
+            &.image {
+              height:auto;
+              @include align-items(center);
+              @include justify-content(center);
+              @include flex-direction(row);
+              img {
+                max-width:100%;
+                margin-top:30px;
+              }
+            }
+          }
+        }
+      }
+    }
+    @include respond-to('small') {
+      width:100%;
+      height:auto;
+
+      div {
+        &.advantages-content {
+          @include flexbox();
+          @include align-items(center);
+          @include justify-content(center);
+          @include flex-direction(column);
+          width:100%;
+          padding-top:50px;
+
+          div{
+            &.content {
+              width:100%;
+              height:auto;
+              h3 {
+                text-align: center;
+                @include font-montserrat(
+                  $size: rem-calc(24)
+                );
+              }
+              p {
+                text-align: center;
+                @include font-montserrat(
+                  $color:white,
+                  $size: rem-calc(15),
+                  $family: 'Montserrat',
+                  $lh:normal
+                );
+              }
+            }
+            &.image {
+              width:100%;
+              height:auto;
+              @include align-items(center);
+              @include justify-content(center);
+              @include flex-direction(row);
+              img {
+                max-width:80%;
+                margin-top:30px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+}

@@ -1,0 +1,57 @@
+html {
+  scroll-behavior: smooth;
+  font-size:$rem-base;
+}
+body {
+  @include font-montserrat($family: 'Montserrat');
+  &.scrolllock {
+    overflow:hidden;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+div {
+  &.wrapper {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    &_vertical_grid {
+      display: grid;
+      align-items: center;
+      grid-template-rows: auto;
+      height: 100vh;
+    }
+
+    @include respond-to('small') {
+      max-width: 720px;
+      padding-right: 25px;
+      padding-left: 25px;
+      &_vertical_grid {
+        align-items: start;
+        min-height: 100vh;
+      }
+    }
+    @include respond-to('medium') {
+      max-width: 960px;
+      padding-right: 25px;
+      padding-left: 25px;
+      &_vertical_grid {
+        height: auto;
+      }
+    }
+    @include respond-to('medium-portrait') {
+      max-width: 960px;
+      &_vertical_grid {
+        height: auto;
+      }
+    }
+    @include respond-to('large') {
+      max-width: 1140px;
+    }
+  }
+}

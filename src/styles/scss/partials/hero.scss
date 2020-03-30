@@ -1,0 +1,149 @@
+section {
+  &.hero {
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(to bottom, #1a3352, #224570);
+    background-image:url('/assets/images/hero.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:bottom right;
+    div {
+      &.hero_content {
+        width:60%;
+        h1 {
+          margin:0px;
+          font-stretch: normal;
+          @include font-montserrat(
+            $color:white,
+            $size: rem-calc(44),
+            $family: 'Montserrat-Bold',
+            $lh:1.23,
+            $ls:normal
+          );
+        }
+        article {
+          @include font-montserrat(
+            $color:#7d9bc1,
+            $size: rem-calc(18),
+            $family: 'Montserrat',
+            $lh:1.67,
+            $ls:normal
+          );
+          padding:43px 0px 52px;
+
+          span {
+            @include font-montserrat(
+              $family: 'Montserrat-Bold'
+            );
+          }
+        }
+        a {
+          background-color: #ff8f34;
+          display: grid;
+          align-items: center;
+          justify-content: center;
+          width:240px;
+          height:60px;
+          @include border-radius(30px);
+          @include font-montserrat(
+            $color:white,
+            $size: rem-calc(18),
+            $family: 'Montserrat-Medium',
+            $lh:normal,
+            $ls:-0.17px
+          );
+          &:hover {
+            text-decoration: underline;
+            background-color:#ec7b23;
+          }
+        }
+        @include respond-to('x-large') {
+          width:50%;
+          h1 {
+            @include font-montserrat(
+              $size: rem-calc(34),
+            );
+          }
+        }
+        @include respond-to('large') {
+          width:50%;
+          h1 {
+            @include font-montserrat(
+              $size: rem-calc(34),
+            );
+          }
+        }
+        @include respond-to('small') {
+          width:100%;
+          text-align: center;
+          margin-top:130px;
+          h1 {
+            @include font-montserrat(
+              $size: rem-calc(26),
+            );
+          }
+          article {
+            @include font-montserrat(
+              $size: rem-calc(15)
+            );
+            padding:23px 0px 52px;
+          }
+          a {
+            margin:0px auto;
+          }
+        }
+        @include respond-to('medium') {
+          width:100%;
+          text-align: center;
+          margin-top:130px;
+          h1 {
+            @include font-montserrat(
+              $size: rem-calc(26),
+            );
+          }
+          article {
+            @include font-montserrat(
+              $size: rem-calc(15)
+            );
+            padding:23px 0px 52px;
+          }
+          a {
+            margin:0px auto;
+          }
+        }
+        @include respond-to('medium-portrait') {
+          width:100%;
+          text-align: center;
+          margin-top:150px;
+          h1 {
+            @include font-montserrat(
+              $size: rem-calc(26),
+            );
+          }
+          article {
+            @include font-montserrat(
+              $size: rem-calc(15)
+            );
+            padding:23px 0px 52px;
+          }
+          a {
+            margin:0px auto;
+          }
+        }
+      }
+    }
+    @include respond-to('medium') {
+      height:auto;
+      min-height:100vh;
+      padding-bottom:700px;
+      background-image:url('/assets/images/heromobile.png');
+    }
+    @include respond-to('small') {
+      min-height:100vh;
+      padding-bottom:140px;
+      background-image:url('/assets/images/heromobile.png');
+    }
+
+
+  }
+}

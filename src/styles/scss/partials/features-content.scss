@@ -1,0 +1,154 @@
+section {
+  &.appcfeatures {
+    padding:rem-calc(40) 0;
+    div {
+      &.featuresLine {
+        width:100%;
+        &:not(:last-child) {
+          border-bottom: solid 1px rgba(26, 51, 82, 0.15);
+          padding-bottom:rem-calc(70);
+          margin-bottom:rem-calc(70);
+        }
+        img {
+          margin-bottom:rem-calc(35);
+        }
+        h4 {
+          margin-bottom:rem-calc(40);
+          @include font-montserrat(
+            $color:#ff8f34,
+            $size: rem-calc(26),
+            $family: 'Montserrat-Medium',
+            $lh:normal
+          );
+        }
+        div {
+          &.featuresGrid {
+            width:100%;
+            margin-top:rem-calc(20);
+            @include flexbox();
+            @include justify-content(space-between);
+            &.three {
+              div {
+                width:30%;
+              }
+            }
+            &.single {
+              div {
+                width:60%;
+              }
+            }
+            &.double {
+              div {
+                width:45%;
+              }
+            }
+            &.wrap {
+              @include flex-wrap(wrap);
+              @include justify-content(flex-start);
+              div {
+                margin-bottom:rem-calc(60);
+                width:23%;
+                margin-right:2%;
+              }
+            }
+            div {
+              width:23%;
+              strong {
+                display:block;
+                margin-bottom:rem-calc(20);
+                @include font-montserrat(
+                  $color:#1a3352,
+                  $size: rem-calc(18),
+                  $family: 'Montserrat-Bold',
+                  $lh:normal
+                );
+              }
+              p {
+                padding-bottom:rem-calc(30);
+                @include font-montserrat(
+                  $color:#727d8a,
+                  $size: rem-calc(14),
+                  $family: 'Montserrat',
+                  $lh:normal
+                );
+
+              }
+            }
+          }
+        }
+        @include respond-to('medium') {
+          &:not(:last-child) {
+            border-bottom: solid 1px rgba(26, 51, 82, 0.15);
+            padding-bottom:rem-calc(20);
+            margin-bottom:rem-calc(20);
+          }
+          div {
+            &.featuresGrid {
+              @include flex-wrap(wrap);
+              &.three {
+                div {
+                  width:100%;
+                }
+              }
+              &.single {
+                div {
+                  width:100%;
+                }
+              }
+              &.double {
+                div {
+                  width:100%;
+                }
+              }
+              &.wrap {
+                div {
+                  width:100%;
+                }
+              }
+              div {
+                width:100%;
+              }
+            }
+          }
+        }
+        @include respond-to('small') {
+          &:not(:last-child) {
+            border-bottom: solid 1px rgba(26, 51, 82, 0.15);
+            padding-bottom:rem-calc(20);
+            margin-bottom:rem-calc(20);
+          }
+          div {
+            &.featuresGrid {
+              @include flex-wrap(wrap);
+              &.three {
+                div {
+                  width:100%;
+                }
+              }
+              &.single {
+                div {
+                  width:100%;
+                }
+              }
+              &.double {
+                div {
+                  width:100%;
+                }
+              }
+              &.wrap {
+                div {
+                  width:100%;
+                }
+              }
+              div {
+                width:100%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+

@@ -1,0 +1,11 @@
+$breakpoints: (
+  'small':  ( max-width:  767px ),
+  'medium': ( (min-width:767px) and (max-width:1024px)),
+  'large':  ( min-width: 1024px ),
+  'x-large':  ( min-width: 1440px ),
+  'xx-large':  ( min-width: 1660px )
+) !default;
+
+$rem-base:16px;
+$navbar-height:110px;
+$fixed-navbar-height:80px;

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="66px" height="67px" viewBox="0 0 66 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="50.0198663%" x2="100.017577%" y2="50.0198663%" id="linearGradient-1">
+            <stop stop-color="#63BE6B" offset="0%"></stop>
+            <stop stop-color="#5BBC6A" offset="50.6%"></stop>
+            <stop stop-color="#4AB96A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-0.0266963293%" y1="50.0120145%" x2="99.942158%" y2="50.0120145%" id="linearGradient-2">
+            <stop stop-color="#3EC6F2" offset="0%"></stop>
+            <stop stop-color="#45AFE3" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.0420683611%" y1="50.0367394%" x2="99.9894829%" y2="50.0367394%" id="linearGradient-3">
+            <stop stop-color="#FAA51A" offset="0%"></stop>
+            <stop stop-color="#FAB716" offset="38.7%"></stop>
+            <stop stop-color="#FAC412" offset="74.1%"></stop>
+            <stop stop-color="#FAC80F" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.0162601626%" y1="49.9983515%" x2="99.9985218%" y2="49.9983515%" id="linearGradient-4">
+            <stop stop-color="#EC3B50" offset="0%"></stop>
+            <stop stop-color="#E7515B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <rect id="Mask" fill="#FFFFFF" x="0" y="0" width="65.9294872" height="66.1057692" rx="12.0000005"></rect>
+            <g id="google-play-store" transform="translate(15.000000, 13.000000)" fill-rule="nonzero">
+                <path d="M22.4497549,12.4988147 L1.28676471,0.119957409 C1.02083333,-0.0380705561 0.68627451,-0.0292912247 0.428921569,0.128736741 C0.162990196,0.286764706 0,0.567703311 0,0.883759241 C0,0.883759241 0.00857843137,2.02507232 0.0171568627,3.90384924 L15.432598,19.6803078 L22.4497549,12.4988147 Z" id="Path" fill="url(#linearGradient-1)"></path>
+                <path d="M0.0171568627,3.90384924 C0.0428921569,10.6814931 0.120098039,27.1339601 0.154411765,35.3250763 L15.4411765,19.6803078 L0.0171568627,3.90384924 Z" id="Path" fill="url(#linearGradient-2)"></path>
+                <path d="M34.5625,19.5837351 L22.4497549,12.4988147 L15.4240196,19.6803078 L23.3504902,27.79241 L34.5710784,21.1025595 C34.8370098,20.9445315 35,20.6548136 35,20.347537 C35,20.031481 34.8284314,19.7417631 34.5625,19.5837351 Z" id="Path" fill="url(#linearGradient-3)"></path>
+                <path d="M0.145833333,35.3250763 C0.162990196,38.2485937 0.171568627,40.1185913 0.171568627,40.1185913 C0.171568627,40.4346472 0.334558824,40.7243652 0.600490196,40.8736138 C0.866421569,41.0316418 1.19240196,41.0316418 1.45833333,40.8736138 L23.3590686,27.8011893 L15.432598,19.6890871 L0.145833333,35.3250763 Z" id="Path" fill="url(#linearGradient-4)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
